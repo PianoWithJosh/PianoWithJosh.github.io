@@ -10,10 +10,8 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
-
 body {
-  background-color: #FFF;
+  background-color: black;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
@@ -28,12 +26,19 @@ p { margin: 1em 0; }
 a         { color: #00a; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
+
+#navbar {
+  margin: 0 auto; 
+}
+
 #navbar ul li {
   display: inline;
-  background-color: tan;
+  padding: 5px;
 }
 #navbar ul li a {
   text-decoration: none;
+   font: 13.34px Helvetica, Arial, sans-serif;
+   font-weight: bold;
 }
 
 /*****************************************************************************/
@@ -65,68 +70,30 @@ ul.posts span {
 .site {
   font-size: 115%;
   text-align: justify;
-  width: 42em;
+  width: 50em;
   margin: 3em auto 2em;
   line-height: 1.5em;
+  border-color: orange;
+  border-width: 4px;
+  border-style: solid;
+  background-color: white;
+  -moz-border-radius-bottomright: 50px;
+  border-bottom-right-radius: 50px;
+  -moz-border-radius-bottomleft: 50px;
+  border-bottom-left-radius: 50px;
+  -moz-border-radius-topright: 50px;
+  border-top-right-radius: 50px;
+  -moz-border-radius-topleft: 50px;
+  border-top-left-radius: 50px;
+  padding: 20px;
 }
 
-.site .header a {
-  font-weight: bold;
-  text-decoration: none;
-}
 
-.site .header h1.title {
-  display: inline-block;
-  margin-bottom: 2em;
-}
-
-.site .header h1.title a {
-  color: #a00;
-}
-
-.site .header h1.title a:hover {
-  color: #000;
-}
-
-.site .header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
-
-.site .header a.extra:hover {
-  color: #000;
-}
-
-.site .meta {
-  color: #aaa;
-}
-
-.site .footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
-}
-
-.site .footer .contact {
-  float: left;
-  margin-right: 3em;
-}
-
-.site .footer .contact a {
-  color: #8085C1;
-}
-
-.site .footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
-
-.site .footer .rss img {
-  border: 0;
-}
+#content:after {  
+  content: "";  
+  display: table;  
+  clear: both;  
+}  
 
 /*****************************************************************************/
 /*
