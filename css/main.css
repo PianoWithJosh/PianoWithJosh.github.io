@@ -33,7 +33,8 @@ a:visited { color: #a0a; }
 
 #navbar ul li {
   display: inline;
-  padding: 5px;
+  padding: 0 15px;
+  border-right: 1px orange solid;
 }
 #navbar ul li a {
   text-decoration: none;
@@ -71,21 +72,20 @@ ul.posts span {
   font-size: 115%;
   text-align: justify;
   width: 50em;
-  margin: 3em auto 2em;
+  margin: 0 auto;
   line-height: 1.5em;
-  border-color: orange;
-  border-width: 4px;
   border-style: solid;
   background-color: white;
-  -moz-border-radius-bottomright: 50px;
-  border-bottom-right-radius: 50px;
-  -moz-border-radius-bottomleft: 50px;
-  border-bottom-left-radius: 50px;
-  -moz-border-radius-topright: 50px;
-  border-top-right-radius: 50px;
-  -moz-border-radius-topleft: 50px;
-  border-top-left-radius: 50px;
   padding: 20px;
+}
+
+.site #Header {
+  background-image: url(../images/Josh3.jpg);
+  height: 400px;
+  width: 100%;
+  display: block;
+  background-position: -150px -30px;
+  background-repeat: no-repeat;
 }
 
 

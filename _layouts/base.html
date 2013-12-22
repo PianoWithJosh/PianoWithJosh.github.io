@@ -15,6 +15,7 @@
 </head>
 <body>
  <div class="site">
+  <div id="Header">
    <div id="navbar">
     <ul>
      <li><a href="/">Home</a></li>
@@ -26,12 +27,13 @@
      <li><a href="/contact/">Contact</a></li>
      <li><a href="/blog/">Blog</a></li>
    </ul>
- 
-    <h1>{{page.title}}</h1>
-    <div id="content" class="clearfix">
-      {{ content }}
-    </div>
-  </div>
+ </div>
+ </div>
+ <h1>{{page.title}}</h1>
+
+<div id="content" class="clearfix">
+  {{ content }}
+</div>
 </div> <!-- /container -->
 
 </body>
