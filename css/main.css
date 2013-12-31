@@ -14,6 +14,7 @@ body {
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
+  background-color: #FDFAFF;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +29,7 @@ a:visited { color: #a0a; }
 
 #navbar {
   margin: 0 auto; 
+  margin-bottom: 30px;
 }
 
 #navbar ul li {
@@ -36,10 +38,11 @@ a:visited { color: #a0a; }
   list-style-type: none;
   text-align: center;
 }
+
 #navbar ul li a {
   text-decoration: none;
-   font: 13.34px Helvetica, Arial, sans-serif;
-   font-weight: bold;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
    color: #6600CC;
 }
 
@@ -75,7 +78,6 @@ ul.posts span {
   width: 90%;
   margin: 0 auto;
   line-height: 1.5em;
-  background-color: white;
 }
 
 .site header {
@@ -83,7 +85,6 @@ ul.posts span {
   display: block;
   background-repeat: no-repeat;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-weight: 300;
   font-size: 5em;
   font-weight: bold;
   line-height: 100%;
