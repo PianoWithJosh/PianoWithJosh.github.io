@@ -31,15 +31,16 @@ a:visited { color: #a0a; }
 }
 
 #navbar ul li {
-  display: inline;
-  padding: 0 15px;
-  border-right: 1px orange solid;
   width: 14.28%;
+  float: left;
+  list-style-type: none;
+  text-align: center;
 }
 #navbar ul li a {
   text-decoration: none;
    font: 13.34px Helvetica, Arial, sans-serif;
    font-weight: bold;
+   color: #6600CC;
 }
 
 /*****************************************************************************/
