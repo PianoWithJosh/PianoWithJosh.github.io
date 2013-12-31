@@ -11,7 +11,6 @@
 }
 
 body {
-  background-color: black;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
@@ -35,6 +34,7 @@ a:visited { color: #a0a; }
   display: inline;
   padding: 0 15px;
   border-right: 1px orange solid;
+  width: 14.28%;
 }
 #navbar ul li a {
   text-decoration: none;
@@ -71,21 +71,31 @@ ul.posts span {
 .site {
   font-size: 115%;
   text-align: justify;
-  width: 50em;
+  width: 90%;
   margin: 0 auto;
   line-height: 1.5em;
-  border-style: solid;
   background-color: white;
-  padding: 20px;
 }
 
-.site #Header {
-  background-image: url(/images/josh3.jpg);
-  height: 400px;
+.site header {
   width: 100%;
   display: block;
-  background-position: -150px -30px;
   background-repeat: no-repeat;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  font-size: 5em;
+  font-weight: bold;
+  line-height: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #3D3D56;
+}
+
+.site hr {
+  width: 100%;
+  color: #373772;
+  background-color: #373772 ;
+  height: 2px;
 }
 
 
