@@ -1,14 +1,15 @@
 ---
 layout: base
+title: NEWS
 ---
-<h1>hello world!</h1>
-
-
+<link rel="stylesheet" href="/css/blog.css">
 <div id="home">
-  <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <h3 class="blog-title"><span>{{ post.date | date_to_string }}</span>{{post.title}}</h3>
+     <div class="blog-content"> {{post.content}}</div>
     {% endfor %}
   </ul>
 </div>
+
+<li> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
