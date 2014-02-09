@@ -11,28 +11,28 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/main.css">
+  <script src="../jquery-1.11.0.min.js"></script>
 
 </head>
 <body>
 <div class="site">
- <div id="header">
-  <header>
-    PIANO WITH JOSH
-  </header>
-  <hr/>
-   <div id="navbar">
+ <header id="header">
+  
+    <img src="../designs/Piano With Josh_CMYK1.png"/>
+  
+   <nav id="navbar">
     <ul>
      <li><a href="/">HOME</a></li>
-     <li><a href="/about/">ABOUT JOSH</a></li>
-     <li><a href="/skypelessons/">SKYPE LESSONS</a></li>
+     <li><a href="/about">ABOUT JOSH</a></li>
+     <li><a href="/skypelessons">SKYPE LESSONS</a></li>
 
-     <li><a href="/instudiolessons/">IN STUDIO LESSONS</a></li>
-     <li><a href="/rates/">RATES</a></li>
-     <li><a href="/contact/">CONTACT</a></li>
-     <li><a href="/blog/">BLOG</a></li>
+     <li><a href="/instudiolessons">IN STUDIO LESSONS</a></li>
+     <li><a href="/rates">RATES</a></li>
+     <li><a href="/contact">CONTACT</a></li>
+     <li><a href="/blog">BLOG</a></li>
    </ul>
-  </div>
- </div>
+  </nav>
+ </header>
  
  <h1 id="title">{{page.title}}</h1>
 
@@ -42,4 +42,10 @@
 </div> <!-- /container -->
 
 </body>
+<script type="text/javascript">
+$(function() {
+  console.log(location.pathname.split("/")[1].toUpperCase());
+  $('nav a[href="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+});
+</script>
 </html>
