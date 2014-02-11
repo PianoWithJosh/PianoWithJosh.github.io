@@ -36,7 +36,7 @@ p { margin: 1em 0; }
 a.active  { color: rgba(150,13,117,1.0); }
 
 header {
- border-bottom: 5px rgba(150,13,117,1.0) solid;
+ 
 }
 
 header img {
@@ -48,8 +48,9 @@ header img {
 
 header nav {
   display: inline;
-  line-height: 37px;
+  line-height: 25px;
   position: absolute;
+  border-bottom: 5px rgba(150,13,117,1.0) solid;
 }
 
 header nav ul {
@@ -57,9 +58,10 @@ header nav ul {
 }
 
 header nav ul li {
+  display: inline;
   margin-left: 0;
   padding: 0 6px;
-  font-size: 37px;
+  font-size: 25px;
   font-family: Bebas-Neue;
   list-style-type: none;
   -webkit-transition: background-color .2s ease-in;
