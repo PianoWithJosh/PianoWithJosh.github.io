@@ -11,6 +11,7 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/grid.css">
   <script src="../jquery-1.11.0.min.js"></script>
 
 </head>
@@ -18,7 +19,7 @@
 <div class="site">
  <header id="header">
   
-    <img src="../designs/Piano With Josh_CMYK1.png"/>
+    <img class="logo" src="../designs/Piano With Josh_CMYK1.png"/>
   
    <nav id="navbar">
     <ul>
@@ -45,7 +46,7 @@
 <script type="text/javascript">
 $(function() {
   console.log(location.pathname.split("/")[1].toUpperCase());
-  $('nav a[href="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+  $('nav a[href="/' + location.pathname.split("/")[1] + '"]').parent().addClass('active');
 });
 </script>
 </html>
