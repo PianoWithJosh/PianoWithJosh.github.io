@@ -55,7 +55,20 @@ h1 {
   line-height: 1.3em;
 
 }
-p { margin: 1em 0; }
+
+h2 { 
+  margin: 1em auto;
+  width: 80%;
+  background-color: rgba(0,169,199,1.0);;
+  text-align: center;
+  font-family: Bebas-Neue;
+  color: white;
+  line-height: 1.2em;
+
+}
+
+p { margin: 1em 0;
+padding: 10px; }
 
 li.active a  { color: rgba(150,13,117,1.0); }
 
@@ -67,6 +80,21 @@ header {
 .sitename {
   font-weight: bold;
   color: rgba(0,169,199,1.0);
+}
+
+.contact-me {
+  color :rgba(150,13,117,1.0);
+}
+
+.testimonial-name {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  background-color: rgba(150,13,117,1.0);
+  font-family: Bebas-Neue;
+  text-align: center;
+  margin-left: 20px;
+  line-height: 80px
 }
 
 header .logo {
