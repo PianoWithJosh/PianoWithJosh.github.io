@@ -1,0 +1,59 @@
+ul#contact-list {
+	text-align: center;
+
+}
+
+#contact-list li div.twist{
+	
+	
+	margin: 0px auto;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 3em;
+	-webkit-transition: -webkit-transform .3s ease-in-out;
+
+}
+
+#contact-list li {
+	list-style-type: none;
+	display: inline-block;
+	width: 200px;
+color: white;
+	text-align: center;
+
+}
+
+#contact-list li div.twist:hover {
+	-webkit-transform: rotate(25deg);
+}
+
+
+#contact-list .details {
+	margin-top: 15px;
+	font-family: Bebas-Neue;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+#contact-list i {
+	line-height: inherit;
+}
+
+#skype {
+	background-color: rgb(18,165,244);
+}
+
+#facebook {
+	background-color: rgb(59,89,152);
+}
+
+#email {
+	background-color: rgb(255,69,190);	
+}
+
+#phone {
+	background-color: rgb(184,27,227);	
+}
