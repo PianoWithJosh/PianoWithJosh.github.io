@@ -160,9 +160,7 @@ position:relative;
 }
 
 #responsive-header nav ul {
-  text-align: left;
   margin-bottom: 5px;
-  margin-left: 2px;
   text-align: center;
 }
 #responsive-header nav ul li:first-child {
@@ -175,7 +173,6 @@ position:relative;
   font-size: 25px;
   font-family: Bebas-Neue;
   list-style-type: none;
-  top: 0px;
   position: relative;
   border-top: 2px solid white;
 }
