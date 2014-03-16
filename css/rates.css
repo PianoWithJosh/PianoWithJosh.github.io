@@ -4,8 +4,8 @@
 	line-height: 1em;
 	background-color: rgba(0,169,199,1.0);
 	border: 3px white solid;
-	width: 300px;
+	width: 100%;
 	padding: 5px;
-	margin: 10px;
+	box-sizing: border-box;
 }
 
