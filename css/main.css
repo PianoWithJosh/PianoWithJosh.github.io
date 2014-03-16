@@ -70,7 +70,6 @@ h2 {
 p { margin: 1em 0;
 padding: 10px; }
 
-li.active a  { color: rgba(150,13,117,1.0); }
 
 
 header {
@@ -97,7 +96,7 @@ header {
   line-height: 80px
 }
 
-header .logo {
+#header .logo {
   padding: 25px;
   width: 142px;
   background-color: rgba(0,169,199,1.0);
@@ -105,19 +104,27 @@ header .logo {
   display:inline;
 }
 
-header nav {
+#responsive-header .logo2 {
+  padding: 3%;
+  background-color: rgba(0,169,199,1.0);
+  border: 4px solid rgba(150,13,117,1.0); 
+  box-sizing: border-box;
+
+}
+
+#header nav {
   line-height: 25px;
   border-bottom: 5px rgba(150,13,117,1.0) solid;
 }
 
-header nav ul {
+#header nav ul {
   text-align: left;
   margin-bottom: 5px;
   margin-left: 2px;
   text-align: center;
 }
 
-header nav ul li {
+#header nav ul li {
   display: inline;
   margin-left: 0;
   padding: 0 15px;
@@ -131,21 +138,57 @@ header nav ul li {
 
 }
 
-header nav ul li:hover {
+#header nav ul li:hover {
 top: -5px;
 position:relative;
 }
 
-header nav ul li:active {
+#header nav ul li:active {
   background-color: rgba(255,255,255,.2);
 }
 
-header nav ul li a {
+#header nav ul li a {
  
   text-decoration: none;
   color: rgba(0,169,199,1.0);
   text-shadow: -.3px .1px rgb(25, 128, 175);
 }
+
+#responsive-header nav {
+  line-height: 25px;
+  border-bottom: 5px rgba(150,13,117,1.0) solid;
+}
+
+#responsive-header nav ul {
+  text-align: left;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  text-align: center;
+}
+#responsive-header nav ul li:first-child {
+  border-top: none;
+}
+
+#responsive-header nav ul li {
+  margin-left: 0;
+  padding: 5px 25px;
+  font-size: 25px;
+  font-family: Bebas-Neue;
+  list-style-type: none;
+  top: 0px;
+  position: relative;
+  border-top: 2px solid white;
+}
+
+#responsive-header nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgba(0,169,199,1.0);
+  text-shadow: -.3px .1px rgb(25, 128, 175);
+  width: 100%;
+}
+
+#responsive-header li.active a, #header li.active a  { color: rgba(150,13,117,1.0); }
 
 /*****************************************************************************/
 /*
