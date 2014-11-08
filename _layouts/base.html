@@ -14,14 +14,14 @@
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/grid.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <script src="../jquery-1.11.0.min.js"></script>
+  <script src="http://www.pianowithjosh.com/jquery-1.11.0.min.js"></script>
 
 </head>
 <body>
 <div class="site">
  <header id="header" class="pure-g-r pure-hidden-phone pure-hidden-tablet">
   <div class="pure-u-1-1">
-  <img class="logo" src="../designs/Piano With Josh_CMYK1.png"/>
+  <img class="logo" src="http://www.pianowithjosh.com/designs/Piano With Josh_CMYK1.png"/>
   <div class="navbox">
    <nav id="navbar">
     <ul>
@@ -35,13 +35,13 @@
      <li><a href="/blog">BLOG</a></li>
    </ul>
   </nav>
-   <img class="bannerimage" src="../images/1EKAlbumArt Banner Piano.jpg"/>
+   <img class="bannerimage" src="http://www.pianowithjosh.com/images/1EKAlbumArt Banner Piano.jpg"/>
 </div>
 </div>
  </header>
  <header id="responsive-header" class="pure-g-r pure-hidden-desktop">
   <div class="pure-u-1-1">
-  <img class="logo2" src="../designs/Piano With Josh_CMYK1.png"/>
+  <img class="logo2" src="http://www.pianowithjosh.com/designs/Piano With Josh_CMYK1.png"/>
   </div>
   <nav class="pure-u-1-1">
     <ul>
@@ -52,7 +52,7 @@
      <li><a href="/bostonpianolessons">BOSTON LESSONS</a></li>
      <li><a href="/rates">RATES</a></li>
      <li><a href="/contact">CONTACT</a></li>
-     <!--li><a href="/blog">BLOG</a></li-->
+     <li><a href="/blog">BLOG</a></li>
     </ul>
   </nav>
  </header>
@@ -67,7 +67,6 @@
 </body>
 <script type="text/javascript">
 $(function() {
-  console.log(location.pathname.split("/")[1].toUpperCase());
   $('nav a[href="/' + location.pathname.split("/")[1] + '"]').parent().addClass('active');
 });
 </script>

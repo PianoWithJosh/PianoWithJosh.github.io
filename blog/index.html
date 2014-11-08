@@ -4,12 +4,18 @@ title: BLOG
 ---
 <link rel="stylesheet" href="/css/blog.css">
 <div id="home">
+<div class="feature-blog-post">
+	<h2>Newest Post</h2>
+	<div class="feature-blog-body">
+	<h3 class="blog-title" ><a href="{{ site.posts[0].url }}">{{ site.posts[0].title }}</a>
+	<div class="blog-date">{{ site.posts[0].date | date_to_string }}</div></h3>
+     <div class="blog-content"> {{site.posts[0].content}}</div></div>
+
+</div>
+</div>
+<h3>Post Archive</h3>
   <ul class="posts">
     {% for post in site.posts %}
-    <h3 class="blog-title"><span>{{ post.date | date_to_string }}</span>{{post.title}}</h3>
-     <div class="blog-content"> {{post.content}}</div>
+    <h3 class="blog-title"><span>&raquo; {{ post.date | date_to_string }}</span><a href="{{ post.url }}"> {{ post.title }}</a></h3>
     {% endfor %}
   </ul>
-</div>
-
-<li> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
