@@ -88,7 +88,7 @@ def main():
     filename = date + '-' + dash_title + '.' + DEFAULT_EXT
 
     # append posts directory to front of filename
-    filename = '/Users/samueljacobs/JoshLessons/_posts/' + filename
+    filename = './_posts/' + filename
 
     # check if the desired file already exists
     if os.path.exists(filename):
@@ -106,7 +106,7 @@ def main():
         # write yaml to file
         try:
             f.write('---\n')
-            f.write('layout: base\n')
+            f.write('layout: post\n')
             f.write('title: ' + title + '\n')
             f.write('---\n\n\n')
         finally:
@@ -116,7 +116,7 @@ def main():
 
     # if write flag is on, then try to open file with vi
     if args.write:
-        subprocess.call(['vi', filename])
+        subprocess.call(['open -a TextEdit ' +  filename])
 
     # print confirmation statement
     print 'New Jekyll post "' + title + '" has been created -- ' + filename

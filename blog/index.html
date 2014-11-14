@@ -4,6 +4,7 @@ title: BLOG
 ---
 <link rel="stylesheet" href="/css/blog.css">
 <div id="home">
+	{% if site.posts[0] %}
 <div class="feature-blog-post">
 	<h2>Newest Post</h2>
 	<div class="feature-blog-body">
@@ -12,6 +13,7 @@ title: BLOG
      <div class="blog-content"> {{site.posts[0].content}}</div></div>
 
 </div>
+
 </div>
 <h3>Post Archive</h3>
   <ul class="posts">
@@ -19,3 +21,5 @@ title: BLOG
     <h3 class="blog-title"><span>&raquo; {{ post.date | date_to_string }}</span><a href="{{ post.url }}"> {{ post.title }}</a></h3>
     {% endfor %}
   </ul>
+
+{% endif %}

@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+.back-to-blog {
+  color: rgba(0,169,199,1.0);
+}
+
 @font-face {
   font-family: Bebas-Neue;
   src: url('../designs/BebasNeue.otf');
@@ -221,14 +225,7 @@ ul.posts span {
 }
 
 .site header {
-/*  width: 100%;
-  display: block;
-  background-repeat: no-repeat;
-  font-size: 5em;
-  font-weight: bold;
-  line-height: 100%;*/
   margin-top: 80px;
-  /*color: #3D3D56;*/
 }
 
 .site hr {
@@ -243,41 +240,3 @@ ul.posts span {
   display: table;  
   clear: both;  
 }  
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-}
-
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
-
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
-}
