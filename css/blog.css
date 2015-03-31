@@ -1,16 +1,7 @@
-.blog-content {
-	margin-left: 50px;
+.blog-content iframe {
+  width: 100%;
 }
 
-.feature-blog-post {
-	width: 80%;
-	margin: 0 auto;
-}
-
-.feature-blog-body {
-	width: 80%;
-	margin: 0 auto;
-}
 .blog-title a {
 	text-decoration: none;
 	color: rgba(150,13,117,1.0);;
